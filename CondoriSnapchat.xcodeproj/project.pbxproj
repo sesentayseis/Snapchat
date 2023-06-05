@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		946B57952A8309C11DE66461 /* Pods_CondoriSnapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BD5E450AB4F8A67F890488 /* Pods_CondoriSnapchat.framework */; };
+		77C1A1E02A2D523D0048DAF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77C1A1DF2A2D523D0048DAF2 /* GoogleService-Info.plist */; };
+		7BBB99293DD404FBAAFA2BCB /* Pods_CondoriSnapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E974097A217D6FC5C699BFE /* Pods_CondoriSnapchat.framework */; };
 		A8CA4EEE2A27A60100FA1C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EED2A27A60100FA1C48 /* AppDelegate.swift */; };
 		A8CA4EF02A27A60100FA1C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EEF2A27A60100FA1C48 /* SceneDelegate.swift */; };
 		A8CA4EF22A27A60100FA1C48 /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EF12A27A60100FA1C48 /* iniciarSesionViewController.swift */; };
 		A8CA4EF52A27A60100FA1C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CA4EF32A27A60100FA1C48 /* Main.storyboard */; };
 		A8CA4EF72A27A60200FA1C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CA4EF62A27A60200FA1C48 /* Assets.xcassets */; };
 		A8CA4EFA2A27A60200FA1C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CA4EF82A27A60200FA1C48 /* LaunchScreen.storyboard */; };
-		A8CA4F022A27A98A00FA1C48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8CA4F012A27A98A00FA1C48 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F906ACCC9DAD2C5AA5043C2 /* Pods-CondoriSnapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoriSnapchat.debug.xcconfig"; path = "Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat.debug.xcconfig"; sourceTree = "<group>"; };
-		58BD5E450AB4F8A67F890488 /* Pods_CondoriSnapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CondoriSnapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4518FE1AF1691EFF82EC24AC /* Pods-CondoriSnapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoriSnapchat.release.xcconfig"; path = "Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat.release.xcconfig"; sourceTree = "<group>"; };
+		4E974097A217D6FC5C699BFE /* Pods_CondoriSnapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CondoriSnapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C1A1DF2A2D523D0048DAF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		77CDE7E7C55FB25F8AA5FDF8 /* Pods-CondoriSnapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoriSnapchat.debug.xcconfig"; path = "Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat.debug.xcconfig"; sourceTree = "<group>"; };
 		A8CA4EEA2A27A60100FA1C48 /* CondoriSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondoriSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CA4EED2A27A60100FA1C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CA4EEF2A27A60100FA1C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +30,6 @@
 		A8CA4EF62A27A60200FA1C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8CA4EF92A27A60200FA1C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8CA4EFB2A27A60200FA1C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8CA4F012A27A98A00FA1C48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AC6D61313B070477E3985466 /* Pods-CondoriSnapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoriSnapchat.release.xcconfig"; path = "Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,28 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				946B57952A8309C11DE66461 /* Pods_CondoriSnapchat.framework in Frameworks */,
+				7BBB99293DD404FBAAFA2BCB /* Pods_CondoriSnapchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7395E53247A1DA7C257D9416 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				58BD5E450AB4F8A67F890488 /* Pods_CondoriSnapchat.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		78F4A8A70B4B202A6DC52AE0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4F906ACCC9DAD2C5AA5043C2 /* Pods-CondoriSnapchat.debug.xcconfig */,
-				AC6D61313B070477E3985466 /* Pods-CondoriSnapchat.release.xcconfig */,
+				77CDE7E7C55FB25F8AA5FDF8 /* Pods-CondoriSnapchat.debug.xcconfig */,
+				4518FE1AF1691EFF82EC24AC /* Pods-CondoriSnapchat.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F422AFD1DCBC7CC87F93246 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E974097A217D6FC5C699BFE /* Pods_CondoriSnapchat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A8CA4EE12A27A60000FA1C48 = {
@@ -67,7 +67,7 @@
 				A8CA4EEC2A27A60100FA1C48 /* CondoriSnapchat */,
 				A8CA4EEB2A27A60100FA1C48 /* Products */,
 				78F4A8A70B4B202A6DC52AE0 /* Pods */,
-				7395E53247A1DA7C257D9416 /* Frameworks */,
+				8F422AFD1DCBC7CC87F93246 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,7 +89,7 @@
 				A8CA4EF62A27A60200FA1C48 /* Assets.xcassets */,
 				A8CA4EF82A27A60200FA1C48 /* LaunchScreen.storyboard */,
 				A8CA4EFB2A27A60200FA1C48 /* Info.plist */,
-				A8CA4F012A27A98A00FA1C48 /* GoogleService-Info.plist */,
+				77C1A1DF2A2D523D0048DAF2 /* GoogleService-Info.plist */,
 			);
 			path = CondoriSnapchat;
 			sourceTree = "<group>";
@@ -101,11 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8CA4EFE2A27A60200FA1C48 /* Build configuration list for PBXNativeTarget "CondoriSnapchat" */;
 			buildPhases = (
-				1378724A8F982CCF1EF25491 /* [CP] Check Pods Manifest.lock */,
+				FAB0FE18BE93ADD1240A4A9A /* [CP] Check Pods Manifest.lock */,
 				A8CA4EE62A27A60100FA1C48 /* Sources */,
 				A8CA4EE72A27A60100FA1C48 /* Frameworks */,
 				A8CA4EE82A27A60100FA1C48 /* Resources */,
-				E4023B351BB000A5D39CF81C /* [CP] Embed Pods Frameworks */,
+				88EEF7E6EC1FE0FE2BDA871D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,8 +154,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8CA4F022A27A98A00FA1C48 /* GoogleService-Info.plist in Resources */,
 				A8CA4EFA2A27A60200FA1C48 /* LaunchScreen.storyboard in Resources */,
+				77C1A1E02A2D523D0048DAF2 /* GoogleService-Info.plist in Resources */,
 				A8CA4EF72A27A60200FA1C48 /* Assets.xcassets in Resources */,
 				A8CA4EF52A27A60100FA1C48 /* Main.storyboard in Resources */,
 			);
@@ -164,7 +164,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1378724A8F982CCF1EF25491 /* [CP] Check Pods Manifest.lock */ = {
+		88EEF7E6EC1FE0FE2BDA871D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAB0FE18BE93ADD1240A4A9A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -184,23 +201,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4023B351BB000A5D39CF81C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -354,7 +354,7 @@
 		};
 		A8CA4EFF2A27A60200FA1C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F906ACCC9DAD2C5AA5043C2 /* Pods-CondoriSnapchat.debug.xcconfig */;
+			baseConfigurationReference = 77CDE7E7C55FB25F8AA5FDF8 /* Pods-CondoriSnapchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,7 +382,7 @@
 		};
 		A8CA4F002A27A60200FA1C48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC6D61313B070477E3985466 /* Pods-CondoriSnapchat.release.xcconfig */;
+			baseConfigurationReference = 4518FE1AF1691EFF82EC24AC /* Pods-CondoriSnapchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

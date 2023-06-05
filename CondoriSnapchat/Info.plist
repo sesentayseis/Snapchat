@@ -21,5 +21,18 @@
 			</array>
 		</dict>
 	</dict>
+    <!-- Otras claves y valores existentes en tu archivo Info.plist -->
+
+        <key>CFBundleURLTypes</key>
+        <array>
+            <dict>
+                <key>CFBundleURLSchemes</key>
+                <array>
+                    <string>app-1-37564543965-ios-d17795171b720e6037bc34</string>
+                </array>
+            </dict>
+        </array>
+
+        <!-- Otras claves y valores existentes en tu archivo Info.plist -->
 </dict>
 </plist>
