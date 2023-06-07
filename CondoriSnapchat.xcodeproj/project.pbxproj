@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77C1A1E02A2D523D0048DAF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77C1A1DF2A2D523D0048DAF2 /* GoogleService-Info.plist */; };
 		7BBB99293DD404FBAAFA2BCB /* Pods_CondoriSnapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E974097A217D6FC5C699BFE /* Pods_CondoriSnapchat.framework */; };
+		A890F1722A30F4A900B81FA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A890F1712A30F4A900B81FA6 /* GoogleService-Info.plist */; };
 		A8CA4EEE2A27A60100FA1C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EED2A27A60100FA1C48 /* AppDelegate.swift */; };
 		A8CA4EF02A27A60100FA1C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EEF2A27A60100FA1C48 /* SceneDelegate.swift */; };
 		A8CA4EF22A27A60100FA1C48 /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EF12A27A60100FA1C48 /* iniciarSesionViewController.swift */; };
@@ -20,8 +20,8 @@
 /* Begin PBXFileReference section */
 		4518FE1AF1691EFF82EC24AC /* Pods-CondoriSnapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoriSnapchat.release.xcconfig"; path = "Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat.release.xcconfig"; sourceTree = "<group>"; };
 		4E974097A217D6FC5C699BFE /* Pods_CondoriSnapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CondoriSnapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77C1A1DF2A2D523D0048DAF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77CDE7E7C55FB25F8AA5FDF8 /* Pods-CondoriSnapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondoriSnapchat.debug.xcconfig"; path = "Target Support Files/Pods-CondoriSnapchat/Pods-CondoriSnapchat.debug.xcconfig"; sourceTree = "<group>"; };
+		A890F1712A30F4A900B81FA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A8CA4EEA2A27A60100FA1C48 /* CondoriSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondoriSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CA4EED2A27A60100FA1C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CA4EEF2A27A60100FA1C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 				A8CA4EF32A27A60100FA1C48 /* Main.storyboard */,
 				A8CA4EF62A27A60200FA1C48 /* Assets.xcassets */,
 				A8CA4EF82A27A60200FA1C48 /* LaunchScreen.storyboard */,
+				A890F1712A30F4A900B81FA6 /* GoogleService-Info.plist */,
 				A8CA4EFB2A27A60200FA1C48 /* Info.plist */,
-				77C1A1DF2A2D523D0048DAF2 /* GoogleService-Info.plist */,
 			);
 			path = CondoriSnapchat;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8CA4EFA2A27A60200FA1C48 /* LaunchScreen.storyboard in Resources */,
-				77C1A1E02A2D523D0048DAF2 /* GoogleService-Info.plist in Resources */,
+				A890F1722A30F4A900B81FA6 /* GoogleService-Info.plist in Resources */,
 				A8CA4EF72A27A60200FA1C48 /* Assets.xcassets in Resources */,
 				A8CA4EF52A27A60100FA1C48 /* Main.storyboard in Resources */,
 			);
