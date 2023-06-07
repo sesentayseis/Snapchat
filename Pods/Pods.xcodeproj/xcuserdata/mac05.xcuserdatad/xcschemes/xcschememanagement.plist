@@ -18,12 +18,22 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>FirebaseAppCheckInterop.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
 		<key>FirebaseAuth.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>FirebaseAuthInterop.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
 		</dict>
 		<key>FirebaseCore.xcscheme</key>
 		<dict>
@@ -39,6 +49,16 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>FirebaseCoreExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
+		<key>FirebaseCoreInternal.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>FirebaseFirestore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,6 +72,21 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>7</integer>
+		</dict>
+		<key>FirebaseStorage.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>FirebaseStorageUI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+		<key>FirebaseUI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
 		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
@@ -94,6 +129,11 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>18</integer>
+		</dict>
+		<key>SDWebImage.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
 		</dict>
 		<key>abseil.xcscheme</key>
 		<dict>
