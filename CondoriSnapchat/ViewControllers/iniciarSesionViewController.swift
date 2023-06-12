@@ -3,7 +3,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class iniciarSesionViewController: UIViewController {
+class iniciarSesionViewController: UIViewController{
 
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -15,35 +15,57 @@ class iniciarSesionViewController: UIViewController {
     }
 
     @IBAction func iniciarSesionTapped(_ sender: Any) {
-        Auth.auth().signIn(withEmail: emailTextField.text!, password:
-        passwordTextField.text!) { (user, error) in
-        print ("Intentando Iniciar Sesion" )
-    if error != nil{
-        print("Se presento el siguient error: \(error)")
-        
-        Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: {(user, error) in
-            print("Intentando crear un usuario")
+    Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            print("Intentando Iniciar Sesion")
             if error != nil {
-                print("Se presento el siguiente error al crear el usuario: \(error)")
+                print("Se presentó el siguiente error: \(error)")
+                let alert = UIAlertController(title: "Error", message: "Usuario no encontrado. ¿Deseas crear un nuevo usuario?", preferredStyle: .alert)
+                let crearAction = UIAlertAction(title: "Crear", style: .default) { (_) in
+                    self.performSegue(withIdentifier: "crearusuariosegue",  sender: self.emailTextField.text)
+                }
+                let cancelarAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+                alert.addAction(crearAction)
+                alert.addAction(cancelarAction)
+                self.present(alert, animated: true, completion: nil)
             } else {
-                print("el usuario fue creado exitosamente")
-                //nuevop
-                Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
-                
-                let alerta = UIAlertController(title: "Creacion de Usuario", message: "Usuario: \(self.emailTextField.text!)",preferredStyle: .alert)
-                let btnOk = UIAlertAction(title: "Aceptar", style: .default, handler: {(UIAlertAction) in self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)})
-                self.present(alerta, animated: true, completion: nil)
+                print("Inicio de sesión exitoso")
+                self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
             }
-            
-        })
-        
-        
-    }else{
-        print("Inicio de sesion exitoso")
-        self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "crearusuariosegue" {
+            if let email = sender as? String {
+                let destinationVC = segue.destination as! RegistrarUsuarioViewController
+                destinationVC.email = email
+            }
+        }
     }
+      
+    
+    // Función para crear un nuevo usuario
+    /*
+    func crearUsuario() {
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            print("Intentando crear un usuario")
+            if let error = error {
+                print("Se presentó el siguiente error al crear el usuario: \(error)")
+            } else {
+                print("El usuario fue creado exitosamente")
+                
+                // Nuevo código
+                Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let registrarUsuarioVC = storyboard.instantiateViewController(withIdentifier: "crearusuariosegue") as! RegistrarUsuarioViewController
+                registrarUsuarioVC.email = self.emailTextField.text!
+                self.present(registrarUsuarioVC, animated: true, completion: nil)
+            }
+        }
+    }*/
+    
+    
+    
 //MARK: Ingresar mediante numero
     @IBAction func capturarNumeroTapped(_ sender: Any) {
         

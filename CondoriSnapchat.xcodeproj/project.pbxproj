@@ -39,6 +39,7 @@
 		7762DF672A36BC6C00E5F243 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762DF662A36BC6C00E5F243 /* ImagenViewController.swift */; };
 		7762DF692A36CC9700E5F243 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762DF682A36CC9600E5F243 /* ElegirUsuarioViewController.swift */; };
 		7762DF6D2A36D50D00E5F243 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762DF6C2A36D50D00E5F243 /* Usuario.swift */; };
+		7762DF6F2A36E47900E5F243 /* RegistrarUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762DF6E2A36E47900E5F243 /* RegistrarUsuarioViewController.swift */; };
 		A8CA4EEE2A27A60100FA1C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EED2A27A60100FA1C48 /* AppDelegate.swift */; };
 		A8CA4EF02A27A60100FA1C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EEF2A27A60100FA1C48 /* SceneDelegate.swift */; };
 		A8CA4EF22A27A60100FA1C48 /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EF12A27A60100FA1C48 /* iniciarSesionViewController.swift */; };
@@ -54,6 +55,7 @@
 		7762DF662A36BC6C00E5F243 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
 		7762DF682A36CC9600E5F243 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
 		7762DF6C2A36D50D00E5F243 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		7762DF6E2A36E47900E5F243 /* RegistrarUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioViewController.swift; sourceTree = "<group>"; };
 		A8CA4EEA2A27A60100FA1C48 /* CondoriSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondoriSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CA4EED2A27A60100FA1C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CA4EEF2A27A60100FA1C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				7762DF602A36B40600E5F243 /* SnapsViewController.swift */,
 				A8CA4EF12A27A60100FA1C48 /* iniciarSesionViewController.swift */,
 				7762DF682A36CC9600E5F243 /* ElegirUsuarioViewController.swift */,
+				7762DF6E2A36E47900E5F243 /* RegistrarUsuarioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				7762DF672A36BC6C00E5F243 /* ImagenViewController.swift in Sources */,
 				7762DF6D2A36D50D00E5F243 /* Usuario.swift in Sources */,
 				A8CA4EF22A27A60100FA1C48 /* iniciarSesionViewController.swift in Sources */,
+				7762DF6F2A36E47900E5F243 /* RegistrarUsuarioViewController.swift in Sources */,
 				A8CA4EEE2A27A60100FA1C48 /* AppDelegate.swift in Sources */,
 				A8CA4EF02A27A60100FA1C48 /* SceneDelegate.swift in Sources */,
 				7762DF692A36CC9700E5F243 /* ElegirUsuarioViewController.swift in Sources */,
