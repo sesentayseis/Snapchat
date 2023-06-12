@@ -35,6 +35,10 @@
 		7762DF5A2A369E2F00E5F243 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7762DF592A369E2F00E5F243 /* FirebaseRemoteConfigSwift */; };
 		7762DF5C2A369E2F00E5F243 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7762DF5B2A369E2F00E5F243 /* FirebaseStorage */; };
 		7762DF5E2A369E2F00E5F243 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7762DF5D2A369E2F00E5F243 /* FirebaseStorageCombine-Community */; };
+		7762DF612A36B40700E5F243 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762DF602A36B40600E5F243 /* SnapsViewController.swift */; };
+		7762DF672A36BC6C00E5F243 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762DF662A36BC6C00E5F243 /* ImagenViewController.swift */; };
+		7762DF692A36CC9700E5F243 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762DF682A36CC9600E5F243 /* ElegirUsuarioViewController.swift */; };
+		7762DF6D2A36D50D00E5F243 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762DF6C2A36D50D00E5F243 /* Usuario.swift */; };
 		A8CA4EEE2A27A60100FA1C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EED2A27A60100FA1C48 /* AppDelegate.swift */; };
 		A8CA4EF02A27A60100FA1C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EEF2A27A60100FA1C48 /* SceneDelegate.swift */; };
 		A8CA4EF22A27A60100FA1C48 /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA4EF12A27A60100FA1C48 /* iniciarSesionViewController.swift */; };
@@ -45,6 +49,11 @@
 
 /* Begin PBXFileReference section */
 		7762DEE22A36932200E5F243 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7762DF5F2A36AFD000E5F243 /* CondoriSnapchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CondoriSnapchat.entitlements; sourceTree = "<group>"; };
+		7762DF602A36B40600E5F243 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		7762DF662A36BC6C00E5F243 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
+		7762DF682A36CC9600E5F243 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
+		7762DF6C2A36D50D00E5F243 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		A8CA4EEA2A27A60100FA1C48 /* CondoriSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CondoriSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CA4EED2A27A60100FA1C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CA4EEF2A27A60100FA1C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +102,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7762DF6A2A36D44A00E5F243 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7762DF662A36BC6C00E5F243 /* ImagenViewController.swift */,
+				7762DF602A36B40600E5F243 /* SnapsViewController.swift */,
+				A8CA4EF12A27A60100FA1C48 /* iniciarSesionViewController.swift */,
+				7762DF682A36CC9600E5F243 /* ElegirUsuarioViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7762DF6B2A36D4E800E5F243 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				7762DF6C2A36D50D00E5F243 /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
 		A8CA4EE12A27A60000FA1C48 = {
 			isa = PBXGroup;
 			children = (
@@ -112,9 +140,11 @@
 		A8CA4EEC2A27A60100FA1C48 /* CondoriSnapchat */ = {
 			isa = PBXGroup;
 			children = (
+				7762DF6B2A36D4E800E5F243 /* Modelos */,
+				7762DF6A2A36D44A00E5F243 /* ViewControllers */,
+				7762DF5F2A36AFD000E5F243 /* CondoriSnapchat.entitlements */,
 				A8CA4EED2A27A60100FA1C48 /* AppDelegate.swift */,
 				A8CA4EEF2A27A60100FA1C48 /* SceneDelegate.swift */,
-				A8CA4EF12A27A60100FA1C48 /* iniciarSesionViewController.swift */,
 				A8CA4EF32A27A60100FA1C48 /* Main.storyboard */,
 				A8CA4EF62A27A60200FA1C48 /* Assets.xcassets */,
 				A8CA4EF82A27A60200FA1C48 /* LaunchScreen.storyboard */,
@@ -228,9 +258,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7762DF612A36B40700E5F243 /* SnapsViewController.swift in Sources */,
+				7762DF672A36BC6C00E5F243 /* ImagenViewController.swift in Sources */,
+				7762DF6D2A36D50D00E5F243 /* Usuario.swift in Sources */,
 				A8CA4EF22A27A60100FA1C48 /* iniciarSesionViewController.swift in Sources */,
 				A8CA4EEE2A27A60100FA1C48 /* AppDelegate.swift in Sources */,
 				A8CA4EF02A27A60100FA1C48 /* SceneDelegate.swift in Sources */,
+				7762DF692A36CC9700E5F243 /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CondoriSnapchat/CondoriSnapchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -402,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CondoriSnapchat/CondoriSnapchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

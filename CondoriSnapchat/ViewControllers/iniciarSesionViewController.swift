@@ -1,8 +1,7 @@
 
 import UIKit
 import FirebaseAuth
-
-
+import FirebaseDatabase
 
 class iniciarSesionViewController: UIViewController {
 
@@ -17,12 +16,31 @@ class iniciarSesionViewController: UIViewController {
 
     @IBAction func iniciarSesionTapped(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password:
-                            passwordTextField.text!) { (user, error) in
-            print ("Intentando Iniciar Sesion" )
+        passwordTextField.text!) { (user, error) in
+        print ("Intentando Iniciar Sesion" )
     if error != nil{
         print("Se presento el siguient error: \(error)")
+        
+        Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: {(user, error) in
+            print("Intentando crear un usuario")
+            if error != nil {
+                print("Se presento el siguiente error al crear el usuario: \(error)")
+            } else {
+                print("el usuario fue creado exitosamente")
+                //nuevop
+                Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
+                
+                let alerta = UIAlertController(title: "Creacion de Usuario", message: "Usuario: \(self.emailTextField.text!)",preferredStyle: .alert)
+                let btnOk = UIAlertAction(title: "Aceptar", style: .default, handler: {(UIAlertAction) in self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)})
+                self.present(alerta, animated: true, completion: nil)
+            }
+            
+        })
+        
+        
     }else{
         print("Inicio de sesion exitoso")
+        self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
         }
     }
     }

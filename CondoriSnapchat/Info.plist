@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Necesitamos permisos para acceder a tu album de fotos</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,18 +23,14 @@
 			</array>
 		</dict>
 	</dict>
-    <!-- Otras claves y valores existentes en tu archivo Info.plist -->
-
-        <key>CFBundleURLTypes</key>
-        <array>
-            <dict>
-                <key>CFBundleURLSchemes</key>
-                <array>
-                    <string>app-1-37564543965-ios-d17795171b720e6037bc34</string>
-                </array>
-            </dict>
-        </array>
-
-        <!-- Otras claves y valores existentes en tu archivo Info.plist -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>app-1-37564543965-ios-d17795171b720e6037bc34</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
