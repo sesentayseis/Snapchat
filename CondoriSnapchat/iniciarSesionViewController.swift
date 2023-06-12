@@ -1,7 +1,7 @@
 
 import UIKit
 import FirebaseAuth
-import FirebaseStorageUI
+import FirebaseStorage
 
 
 class iniciarSesionViewController: UIViewController {
