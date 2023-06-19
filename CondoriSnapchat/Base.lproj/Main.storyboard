@@ -169,19 +169,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensaje:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq8-dp-FPF">
-                                <rect key="frame" x="0.0" y="77" width="69" height="21"/>
+                                <rect key="frame" x="20" y="77" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagen Enviada:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypY-cm-BDb">
-                                <rect key="frame" x="0.0" y="130" width="125" height="21"/>
+                                <rect key="frame" x="20" y="130" width="125" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Qh-hI-hfK">
-                                <rect key="frame" x="0.0" y="197" width="394" height="249"/>
+                                <rect key="frame" x="20" y="197" width="374" height="449"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tMn-xy-8O8"/>
@@ -192,8 +192,8 @@
                             <constraint firstItem="ypY-cm-BDb" firstAttribute="top" secondItem="Eq8-dp-FPF" secondAttribute="bottom" constant="32" id="GUj-VY-rXK"/>
                             <constraint firstItem="Eq8-dp-FPF" firstAttribute="top" secondItem="tMn-xy-8O8" secondAttribute="top" constant="21" id="LFc-aY-buZ"/>
                             <constraint firstItem="7Qh-hI-hfK" firstAttribute="trailing" secondItem="x0T-qi-ZzH" secondAttribute="trailingMargin" id="RbL-DR-QZE"/>
-                            <constraint firstItem="tMn-xy-8O8" firstAttribute="bottom" secondItem="7Qh-hI-hfK" secondAttribute="bottom" constant="440" id="cBu-b4-4Yc"/>
-                            <constraint firstItem="Eq8-dp-FPF" firstAttribute="leading" secondItem="tMn-xy-8O8" secondAttribute="leading" id="qp6-Hl-6eK"/>
+                            <constraint firstItem="tMn-xy-8O8" firstAttribute="bottom" secondItem="7Qh-hI-hfK" secondAttribute="bottom" constant="240" id="cBu-b4-4Yc"/>
+                            <constraint firstItem="Eq8-dp-FPF" firstAttribute="leading" secondItem="tMn-xy-8O8" secondAttribute="leading" constant="20" id="qp6-Hl-6eK"/>
                             <constraint firstItem="7Qh-hI-hfK" firstAttribute="top" secondItem="ypY-cm-BDb" secondAttribute="bottom" constant="46" id="wXj-a6-97I"/>
                         </constraints>
                     </view>
