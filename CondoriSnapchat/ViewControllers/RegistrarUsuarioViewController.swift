@@ -35,7 +35,7 @@ class RegistrarUsuarioViewController: UIViewController{
                print("Se presentó el siguiente error al crear el usuario: \(error)")
            } else {
                print("El usuario fue creado exitosamente")
-               
+               //realtime database
                Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
                
                let alert = UIAlertController(title: "Usuario Creado", message: "Usuario creado exitosamente.", preferredStyle: .alert)
