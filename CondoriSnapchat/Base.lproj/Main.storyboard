@@ -253,11 +253,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Enviar Mensaje" id="Duv-tb-jUJ">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="camera" catalog="system" id="Au5-Ku-Com">
-                            <connections>
-                                <action selector="camaraTapped:" destination="6IE-Rh-9Gv" id="gOx-k5-Zgh"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="camera" catalog="system" id="Au5-Ku-Com">
+                                <connections>
+                                    <action selector="camaraTapped:" destination="6IE-Rh-9Gv" id="gOx-k5-Zgh"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="folder" catalog="system" id="t7t-Xm-UpY">
+                                <connections>
+                                    <action selector="mediaTapped:" destination="6IE-Rh-9Gv" id="NWg-8t-9jF"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="descripcionTextField" destination="u8Y-y1-PZK" id="ZLc-y9-kf8"/>
@@ -415,6 +422,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="folder" catalog="system" width="128" height="96"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="person.crop.circle.badge.plus.fill" catalog="system" width="128" height="114"/>
         <image name="person.fill.badge.plus" catalog="system" width="128" height="125"/>

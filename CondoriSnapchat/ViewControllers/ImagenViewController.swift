@@ -23,8 +23,16 @@ class ImagenViewController: UIViewController, UIImagePickerControllerDelegate, U
         elegirContactoBoton.isEnabled = false
     }
     
-    @IBAction func camaraTapped(_ sender: Any) {
+    
+    @IBAction func mediaTapped(_ sender: Any) {
         imagePicker.sourceType = .savedPhotosAlbum
+        imagePicker.allowsEditing = false
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func camaraTapped(_ sender: Any) {
+        imagePicker.sourceType = .savedPhotosAlbum //aqui seria .camera si tuviera un cel pa probar
         imagePicker.allowsEditing = false
         present(imagePicker, animated: true, completion: nil)
     }
