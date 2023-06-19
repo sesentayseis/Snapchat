@@ -120,12 +120,24 @@
         <!--Snaps View Controller-->
         <scene sceneID="h6Z-dk-wYx">
             <objects>
-                <viewController id="1qO-As-f3p" customClass="SnapsViewController" customModule="CondoriSnapchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="1qO-As-f3p" customClass="SnapsViewController" customModule="CondoriSnapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5cS-8i-lnl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AYJ-EB-0xJ">
+                                <rect key="frame" x="0.0" y="56" width="414" height="830"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5xg-vf-JWq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AYJ-EB-0xJ" firstAttribute="leading" secondItem="5xg-vf-JWq" secondAttribute="leading" id="3xA-4a-EvW"/>
+                            <constraint firstItem="AYJ-EB-0xJ" firstAttribute="top" secondItem="5xg-vf-JWq" secondAttribute="top" id="OjH-EK-Cxy"/>
+                            <constraint firstItem="5xg-vf-JWq" firstAttribute="trailing" secondItem="AYJ-EB-0xJ" secondAttribute="trailing" id="aKA-3l-GgT"/>
+                            <constraint firstItem="5xg-vf-JWq" firstAttribute="bottom" secondItem="AYJ-EB-0xJ" secondAttribute="bottom" id="bF2-Wm-tYG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="60J-wM-RkA">
                         <barButtonItem key="leftBarButtonItem" title="Cerrar Sesion" id="XX2-eN-UVO">
@@ -139,10 +151,61 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tablaSnaps" destination="AYJ-EB-0xJ" id="gf6-SV-b2a"/>
+                        <segue destination="aUs-Eq-xqx" kind="show" identifier="versnapsegue" id="lPM-4V-E6S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbb-lY-W6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1549" y="90"/>
+        </scene>
+        <!--Ver Snap View Controller-->
+        <scene sceneID="3kz-Ln-2QC">
+            <objects>
+                <viewController id="aUs-Eq-xqx" customClass="VerSnapViewController" customModule="CondoriSnapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x0T-qi-ZzH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensaje:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq8-dp-FPF">
+                                <rect key="frame" x="0.0" y="77" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagen Enviada:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypY-cm-BDb">
+                                <rect key="frame" x="0.0" y="130" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Qh-hI-hfK">
+                                <rect key="frame" x="0.0" y="197" width="394" height="249"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tMn-xy-8O8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ypY-cm-BDb" firstAttribute="leading" secondItem="Eq8-dp-FPF" secondAttribute="leading" id="1hC-Bk-ILF"/>
+                            <constraint firstItem="7Qh-hI-hfK" firstAttribute="leading" secondItem="ypY-cm-BDb" secondAttribute="leading" id="7Jx-tT-HFo"/>
+                            <constraint firstItem="ypY-cm-BDb" firstAttribute="top" secondItem="Eq8-dp-FPF" secondAttribute="bottom" constant="32" id="GUj-VY-rXK"/>
+                            <constraint firstItem="Eq8-dp-FPF" firstAttribute="top" secondItem="tMn-xy-8O8" secondAttribute="top" constant="21" id="LFc-aY-buZ"/>
+                            <constraint firstItem="7Qh-hI-hfK" firstAttribute="trailing" secondItem="x0T-qi-ZzH" secondAttribute="trailingMargin" id="RbL-DR-QZE"/>
+                            <constraint firstItem="tMn-xy-8O8" firstAttribute="bottom" secondItem="7Qh-hI-hfK" secondAttribute="bottom" constant="440" id="cBu-b4-4Yc"/>
+                            <constraint firstItem="Eq8-dp-FPF" firstAttribute="leading" secondItem="tMn-xy-8O8" secondAttribute="leading" id="qp6-Hl-6eK"/>
+                            <constraint firstItem="7Qh-hI-hfK" firstAttribute="top" secondItem="ypY-cm-BDb" secondAttribute="bottom" constant="46" id="wXj-a6-97I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nN3-TT-PM9"/>
+                    <connections>
+                        <outlet property="imageView" destination="7Qh-hI-hfK" id="DBq-Xh-DaH"/>
+                        <outlet property="lblMensaje" destination="Eq8-dp-FPF" id="lrD-Rp-MLq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9j-ST-OuF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1547.8260869565217" y="823.66071428571422"/>
         </scene>
         <!--Enviar Mensaje-->
         <scene sceneID="iBl-yJ-6hP">
